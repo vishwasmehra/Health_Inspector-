@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        
+        <!--CSS FILES CDN LINKS -->
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+        <!-- Bootstrap core CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.3/css/mdb.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+
+        <!--JAVASCRIPT CDN LINKS -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.3/js/mdb.min.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#b1").click(function(){
+                        $(".icon").css({color:red});
+                    });
+                $("#sel").hover(function(){
+                        $('select.dropdown')
+                        .dropdown('selected',['Keyword','City']);
+                    });
+            });
+           
+        </script>
+
+        
+
+    </head>
+
+    <body>
+        <div>
+            <div class="ser">
+                <form class="form-inline mr-auto">
+                    <input class="form-control mr-sm-2 serh bt" type="text" placeholder="Search" aria-label="Search">
+                <div class="input-group-append">
+                    <span><button class="btn aqua-gradient btn-rounded btn-sm my-0 bt" type="submit">Search</button></span>
+                </div>
+                </form>
+                <div>
+                 <div style="padding-top: 1%;">
+                   <div class="ui floating labeled icon button" tabindex="0">
+                    <i class="filter icon"></i>
+                    <span class="text">
+                         Filter Doctors
+                    </span>
+                    
+                    <!--<div class="scrolling menu" tabindex="0">
+                        <div class="ui icon search input">
+                            <i class="search icon" style="color: black;"></i>
+                            <input type="text" placeholder="Keyword Search.." autocomplete="on">
+                        </div>
+                        <div class="header">
+                            <i class="tag icon"></i>
+                            "Tag Labels"
+                        </div>
+                    </div>-->
+
+                    </div><div style="padding-top: 1%;">
+                    <select class="ui fluid search dropdown" multiple="" id="sel">
+                            <option value="">Select Filter</option>
+                            <option value="Keyword">Keyword</option>
+                            <option value="city">City</option>
+                            <option value="Designation">Designation</option>
+                   </select></div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="ser lis">
+            <table class="ui fixed celled table">
+                <tr>
+                    <td> Doctor Batra, Dehradun, Uttarakhand.+91 6754364667</td>
+                    <td><p><i class="circle icon"></i>Available</p></td>
+                    <td>
+                        <a class="btn btn-sm btn-rounded btn-floating purple-gradient" href="#" style="color: azure;" id="#b1">Book Appointment</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> Doctor Batra, Dehradun, Uttarakhand.+91 6754364667</td>
+                    <td><p><i class="circle icon"></i>Available from 10am to 4pm</p>
+                    </td>
+                    <td><a class="btn btn-sm btn-rounded btn-floating purple-gradient" href="#" style="color:aliceblue;" id="#b1">Book Appointment</a>
+                    </td>
+                </tr>
+
+                <tr><td> Doctor Rana, Pune,Maharashtra.
+                          +91 8754364667</td>
+                    <td><p><i class="circle icon"></i>Unavailable from 9am to 10am</p></td>
+                    <td><a class="btn btn-sm btn-rounded btn-floating purple-gradient" href="#" style="color: azure;" id="#b1">Book Appointment</a>
+                    </td>
+                </tr>
+
+                <tr>
+                   <td>Doctor Pradeep, New Delhi.
+                        +91 754364887</td>
+                    <td><p><i class="circle icon"></i>Unavailable</p></td>
+                    <td><a class="btn btn-sm btn-rounded btn-floating purple-gradient" href="#" style="color: azure;" id="#b1">Book Appointment</a>
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+                <!--<div class="ser lis">
+                  <div class="ui menu horizontal segments">
+                    <div class="ui segment">
+                        <p>
+                            Doctor Batra, Dehradun, Uttarakhand.
+                            +91 6754364667
+                        </p>
+                        
+                    </div>
+
+                    <div class="ui segment">
+                        <div class="ui star rating" data-max-rating="4" data-rating="3">
+                            <i class="far fa-star 2rem"></i>
+                            <i class="far fa-star 2rem"></i>
+                            <i class="far fa-star 2rem"></i>
+                            <i class="far fa-star 2rem"></i>
+                            <i class="far fa-star 2rem"></i>
+                        </div>
+                    </div>
+
+                    <div class="ui segment">
+                        <p><i class="circle icon"></i>Available</p>
+                    </div>
+                    <div class="ui segment">
+                        
+                        <a class="btn btn-sm btn-rounded btn-floating purple-gradient" href="/Mainappointment.html" style="text-decoration-color: azure;">Book Appointment</a>
+ 
+                    </div>
+                   <div class="results"></div>
+                </div>
+                <div class="ui segment">
+                    <p></p>
+                </div>
+            </div>-->
+        </div>
+    </body>
+</html>

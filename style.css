@@ -1,0 +1,39 @@
+.ser
+{
+    padding-top: 10%; 
+    padding-left:10%; 
+    padding-right: 10%;
+    
+
+}
+.serh.bt
+{
+    float: right;
+    width: 75%;
+}
+.icon
+{
+    color: green;
+    visibility: visible;
+    font-family: 'Courier New';
+}
+#unav
+{
+    color: red;
+    visibility: visible;
+    font-family: 'Courier New';
+}
+.ser.lis
+{
+    
+    padding-top:1%; 
+}
+.ic
+{
+    display: inline-flex;
+    float: right;
+}
+.ser.nw
+{
+    padding:5% 5%;
+}
